@@ -1,2 +1,2 @@
 # spring-openai-study
-openai  java17 chagpt
+openai  java17 chatgpt
