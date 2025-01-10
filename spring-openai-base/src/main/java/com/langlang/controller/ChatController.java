@@ -12,7 +12,6 @@ public class ChatController {
     @Autowired
     private OpenAiChatModel openAiChatModel;
 
-
     @RequestMapping(value = "/ai/chat")
     public String chat(@RequestParam("message") String message) {
 
@@ -20,6 +19,13 @@ public class ChatController {
         String call = openAiChatModel.call(message);
         System.out.println(call);
         return call;
+    }
+
+    @RequestMapping(value = "/ai/model")
+    public Object model(@RequestParam("message") String message) {
+
+        System.out.println(openAiChatModel);
+        return "";
     }
 
 

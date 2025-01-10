@@ -1,5 +1,9 @@
 spring:
   ai:
     openai:
-      api-key: ddddd
-      base-url: https://api.openai.com/
+#      api-key: sk-swioeiougagj
+      api-key: ${Your api-key}
+#      base-url: https://api.openai.com
+      base-url: ${Your base-url}
+
+#      chat:
