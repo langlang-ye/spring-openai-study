@@ -67,7 +67,9 @@ public class ChatController {
             if(chatResponse.getResult() != null) {
                 System.out.println(chatResponse.getResult().getOutput());
                 if(chatResponse.getResult().getOutput() != null) {
-                    System.out.println("实际序列:  " + chatResponse.getResult().getOutput().getContent());
+                    // System.out.println("实际序列:  " + chatResponse.getResult().getOutput().getContent());
+                    // 版本升级后 getContent 去掉了, 可以使用getText 方法代替
+                    System.out.println("实际序列:  " + chatResponse.getResult().getOutput().getText());
                 }
             }
         });

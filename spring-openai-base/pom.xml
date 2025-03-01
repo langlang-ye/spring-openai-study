@@ -17,7 +17,7 @@
     <properties>
         <java.version>17</java.version>
         <!-- maven 仓库已经发布了  Jan 29, 2025-->
-        <spring-ai.version>1.0.0-M5</spring-ai.version>
+        <spring-ai.version>1.0.0-M6</spring-ai.version>
     </properties>
 
     <dependencies>

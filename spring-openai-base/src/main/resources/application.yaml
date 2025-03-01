@@ -5,6 +5,8 @@ spring:
       api-key: ${Your api-key}
 #      base-url: https://api.openai.com
       base-url: ${Your base-url}
+
+#      ChatController 聊天测试选择了便宜的模型
       chat:
         options:
           model: gpt-3.5-turbo
