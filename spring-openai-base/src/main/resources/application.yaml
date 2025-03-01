@@ -5,5 +5,7 @@ spring:
       api-key: ${Your api-key}
 #      base-url: https://api.openai.com
       base-url: ${Your base-url}
+      chat:
+        options:
+          model: gpt-3.5-turbo
 
-#      chat:
