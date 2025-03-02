@@ -23,7 +23,7 @@ public class ImageController {
         System.out.println(openAiImageModel);
         ImageResponse imageResponse = openAiImageModel.call(new ImagePrompt(msg, OpenAiImageOptions.builder()
                 .withQuality("hd")
-                .withN(2) // 可以一次生成多张图片, dall-e-3 每次只能生成一张
+                .withN(1) // 可以一次生成多张图片, dall-e-3 每次只能生成一张
                 .withHeight(1024)
                 .withWidth(1024)
                 .build()));
